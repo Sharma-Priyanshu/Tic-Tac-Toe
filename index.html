@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="main-body">
+    <nav id="navbar">
+        <ul>
+            <div id="nav-head">MyTicTacToe.com</div>  
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Theme</a></li>
+        </ul>
+    </nav>
+    <h1>Tic Tac Toe</h1>
+
+
+    <div class="board">
+        <div class="cell" id="grid-1" onclick="play()"><span class="text"></span></div>
+        <div class="cell" id="grid-2"><span class="text"></span></div>
+        <div class="cell" id="grid-3"><span class="text"></span></div>
+        <div class="cell" id="grid-4"><span class="text"></span></div>
+        <div class="cell" id="grid-5"><span class="text"></span></div>
+        <div class="cell" id="grid-6"><span class="text"></span></div>
+        <div class="cell" id="grid-7"><span class="text"></span></div>
+        <div class="cell" id="grid-8"><span class="text"></span></div>
+        <div class="cell" id="grid-9"><span class="text"></span></div>
+    </div>
+    <div class="bottom">
+        <span id="player-turn">Turn for X</span>
+        <button id="reset">Reset</button>
+    </div>
+    
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-body{background: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+overflow: hidden;
+}
+#navbar{
+    height: 5vh;
+    width: 100%;
+}
+
+#nav-head{
+    font-size: 1.03rem;
+    color:rgb(194, 238, 228);
+    padding-top: 3px
+}
+
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+#navbar ul li{
+    margin-left: 30px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#navbar ul li:hover {
+    background-color:rgb(167, 61, 167);
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    height: 5vh;
+}
+
+.board{
+    width: 100vw;
+    height: 75vh;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    padding: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: rgb(168, 116, 216);
+}
+
+.text{
+    font-size: 2rem;
+}
+
+#grid-1{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+#grid-2{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#grid-3{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+#grid-4{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+#grid-5{
+  border: 1px solid black;
+}
+#grid-6{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+#grid-7{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+#grid-8{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+#grid-9{
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.bottom{
+    height: 7vh;
+    width: 100vw;
+}
+
+#player-turn{
+    color: rgb(250, 241, 241);
+    margin: 0 20px;
+}
