@@ -2,6 +2,7 @@ console.log("working fine");
 let turn;
 let ting = new Audio("./tic\ tac\ toe/ting.mp3");
 let music = new Audio("./tic\ tac\ toe/music.mp3");
+let gameoverSound = new Audio("./tic\ tac\ toe/gameover.mp3");
 let gameover = false;
 
 
@@ -13,6 +14,8 @@ function changeTurn(){
     }
     return;
 }
+
+music.play();
 
 changeTurn();
 
@@ -31,8 +34,9 @@ function checkWin(){
             board.style.visibility = "hidden"
             gameoverPage.style.visibility = "visible";
             playerTurn.style.visibility = "hidden";
-            reset.style.visibility = "hidden"
-
+            reset.style.visibility = "hidden";
+            gameoverSound.play();
+            music.pause();
             gameover = true;
         } 
     });
@@ -85,7 +89,7 @@ replay.addEventListener('click', ()=>{
             gameoverPage.style.visibility = "hidden";
             playerTurn.style.visibility = "visible";
             reset.style.visibility = "visible"
-
+    music.play();
     gameover = true;
     document.querySelector("#player-turn").innerHTML  = "Turn for " + turn;
     
